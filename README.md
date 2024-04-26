@@ -1,5 +1,6 @@
 # Long-living branches example
 # Savostian V.V
+# New feature_1
 
 This repository demonstrates the Long-living branches strategy for managing branches in a Git-based project.
 
