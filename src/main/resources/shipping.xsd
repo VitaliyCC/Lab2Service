@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://example.com/shipping"
+        targetNamespace="http://example.com/shipping"
+        elementFormDefault="qualified">
+
+    <xs:element name="calculateShippingCostRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="weight" type="xs:double"/>
+                <xs:element name="distance" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="calculateShippingCostResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cost" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
